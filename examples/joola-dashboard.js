@@ -1,3 +1,17 @@
+/*
+ Simple demo demoing plotting a timeline with Joola as a data store.
+ - Install and run Joola (default configuration).
+ - Run the dashboard example, node ./examples/joola-dashboard.js
+ - Using curl, push events into Joola:
+ ```
+ $ curl -X POST -H 'Content-Type: application/json' -d '{
+     "user": "itay",
+     "events": 35
+   }'
+ ```
+ - The timeline should reflect the number of events you pushed.
+*/
+
 var blessed = require('blessed'),
   contrib = require('../index'),
   joola = require('joola.sdk');
