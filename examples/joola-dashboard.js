@@ -7,7 +7,7 @@
  $ curl -X POST -H 'Content-Type: application/json' -d '{
      "user": "itay",
      "events": 35
-   }'
+   }' http://localhost:8080/insert/events?APIToken=apitoken-demo
  ```
  - The timeline should reflect the number of events you pushed.
 */
